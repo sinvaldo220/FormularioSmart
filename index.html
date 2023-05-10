@@ -14,89 +14,86 @@
 <body>
     <div class="container">
 
-        <div class="box">
-            <h2>teste</h2>
+        <div class="box box-45">
+            <h2>Crie Sua Conta</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nesciunt facilis laudantium eos tempora at esse atque aut, adipisci nam sequi sit suscipit ex possimus. Fuga fugiat illo iste rerum.</p>
-            <img src="img/online-medical-conference.avif" width="200px" alt="Homen sentado ao computador">
+            <img src="img/online-medical-conference.avif" width="500px" alt="Homen sentado ao computador">
         </div>
 
-        <div class="box">
+        <div class="box box-55">
             <h2>Preencha seus dados</h2>
             <form id="dadosConta" name="dadosConta" action="/aplicacao" method="post" class="form">
                 <div class="box-form-item">
                     <label for="nome">Nome</label>
-                    <i class="fa-solid fa-user fa-fade"></i>
+                    <i class="fa-solid fa-user fa-fade icon"></i>
                     <input type="text" id="nome" name="nome" placeholder="Ex: Nome" minlength="3" maxlength="20" required autofocus>
                 </div>
 
                 <div class="box-form-item">
                     <label for="sobrenome">Sobrenome</label>
-                    <i class="fa-solid fa-user-tag"></i>
+                    <i class="fa-solid fa-user-tag icon"></i>
                     <input type="text" id="sobrenome" name="sobrenome" placeholder="Ex: de tal da silva" minlength="3" maxlength="50" required>
                 </div>
 
                 <div class="box-form-item">
                     <label for="usuario">Usuário</label>
-                    <i class="fa-solid fa-user-secret"></i>
+                    <i class="fa-solid fa-user-secret icon"></i>
                     <input type="text" id="usuario" name="usuario" placeholder="Ex: User12345" minlength="8" maxlength="20" required>
                 </div>
 
                 <div class="box-form-item">
                     <label for="senha">Senha</label>
-                    <i class="fa-solid fa-key"></i>
+                    <i class="fa-solid fa-key icon"></i>
                     <input type="password" id="senha" name="senha" placeholder="Ex: 1235ABc@" minlength="8" maxlength="20" required>
                 </div>
 
                 <div class="box-form-item">
                     <label for="e-mai">E-mail</label>
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope icon"></i>
                     <input type="email" id="e-mai" name="e-mai" placeholder="Ex: exempl@gmail.com" minlength="8" required>
                 </div>
 
                 <div class="box-form-item">
                     <label for="e-mai">Data de Nascimento</label>
-                    <i class="fa-solid fa-cake-candles"></i>
+                    <i class="fa-solid fa-cake-candles icon"></i>
                     <input type="date" id="e-mai" name="e-mai" placeholder="Ex: exempl@gmail.com" minlength="8" required>
                 </div>
 
-                <div class="box-form-radio">
+                <div class="box-form-item">
                     <label for="">Tipo de Conta</label>
-                    <i class="fa-regular fa-credit-card"></i>
+                        <!-- <i class="fa-regular fa-credit-card icon"></i> -->
                     <div class="box-form-radio">
-                        <input type="radio" name="radioConta" id="conta-1" value="1">
-                        <label for="conta-1">Free</label>
-                    </div>
-
-                    <div class="box-form-radio">                
-                    <input type="radio" name="radioConta" id="conta-2" value="2">
-                    <label for="conta-2">Gold</label>
-                    </div>
-
-                    <div class="box-form-radio">
-                    <input type="radio" name="radioConta" id="conta-3" value="3">
-                    <label for="conta-3">Premium</label>
-                    </div>
-
-                    <div class="box-form-radio">
-                        <label for="atuacao">Área de Atuação</label>
-                        <select name="radioConta" id="atuacao">
-                            <option value="0" disabled selected>Selecione a sua Opção</option>
-                            <option value="1" >area 1</option>
-                            <option value="2" >area 2</option>
-                            <option value="3" >area 3</option>
-                            <option value="4" >area 4</option>
-                        </select>
-                        
+                        <div class="radio">
+                            <input type="radio" name="radioConta" id="conta-1" value="1">
+                            <label for="conta-1">Free</label>
+                        </div>
+                        <div class="radio">                
+                            <input type="radio" name="radioConta" id="conta-2" value="2">
+                            <label for="conta-2">Gold</label>
                         </div>
 
-                        <div class="botao-form-button">
-                            <button type="submit">Criar Conta<i class="fa-regular fa-circle-right"></i></button>
+                        <div class="radio">
+                            <input type="radio" name="radioConta" id="conta-3" value="3">
+                            <label for="conta-3">Premium</label>
                         </div>
-
+                    </div>
                 </div>
-            </form>
+                <div class="box-form-item">
+                    <label for="atuacao" class="select">Área de Atuação</label>
+                    <select name="atuacao" id="atuacao">
+                        <option value="0" disabled selected>Selecione a sua Opção</option>
+                        <option value="1" >area 1</option>
+                        <option value="2" >area 2</option>
+                        <option value="3" >area 3</option>
+                        <option value="4" >area 4</option>
+                    </select>    
+                </div>
+
+                <div class="box-form-button">
+                    <button type="submit">Criar Conta <i class="fa-regular fa-circle-right"></i></button>
+                </div>
+            </form>        
         </div>
     </div>
-    
 </body>
 </html>
